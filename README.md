@@ -15,7 +15,15 @@
 - pragma - a directive to tell language and compiler version
 
 ```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0; // define language and compiler
 
+contract MyContract{
+    bool status = false;
+    string name = "Chitsanupong";
+    int amount = 1000;
+    uint public balance = 5000;
+}
 ```
 
 ### Data type
@@ -26,6 +34,25 @@
 - struct
 - array
 - mapping
+
+### Access modifier
+
+- public
+- private
+
+```
+// define guide
+
+// public
+string public name;
+
+// private
+uint private _balance;
+
+// define initial value
+string public name = "Chitsanupong";
+
+```
 
 ## Remix IDE
 
@@ -39,8 +66,9 @@ After press `ctrl + s` to save, Remix will compile your code automatically. Then
 
 Select environment, account, gas limit, contract and then click Deploy.
 
-- Every time you deploy the contract, you need to pay gas price
-- When deploy button color is orange, it means you need to pay gas price
+- Every time you deploy the contract, you need to pay gas price.
+- When the button color is orange like deployment & transaction, it means that you need to pay gas price.
+- When you would like to access public variable in contract, you do not need to pay gas price (click blue button).
 
 ## Reference
 
