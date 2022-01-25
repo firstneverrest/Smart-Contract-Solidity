@@ -76,6 +76,30 @@ contract MyContract{
 
 Before deployment, you need to provide initial value in constructor. `Require()` use to create constraint of initial value such as balance >= 1000.
 
+## Function
+
+- Pure - a function can access only constant and not access any value in storage
+- View - a function can get value from storage but cannot edit
+- Payable - a function can edit value in storage
+
+```
+// view
+function getBalance() public view returns (uint balance) {
+    return _balance;
+}
+
+// pure
+function getBalance() public pure returns (uint balance) {
+    return 1000;
+}
+
+// payable
+function deposit(uint amount) public {
+    _balance += amount;
+}
+
+```
+
 ## Remix IDE
 
 Remix IDE is an open source tool that helps writing Solidity contracts straight from the browser. It has modules for testing, debugging and deploying of smart contracts.
