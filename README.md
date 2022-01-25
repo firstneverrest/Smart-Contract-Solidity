@@ -54,6 +54,28 @@ string public name = "Chitsanupong";
 
 ```
 
+### Constructor
+
+Define initial value in smart contract
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0; // define language and compiler
+
+contract MyContract{
+    string _name;
+    uint _balance;
+
+    constructor(string memory name, uint balance) {
+        require(balance >= 1000, "balance must greater and equal to 1000");
+        _name = name;
+        _balance = balance;
+    }
+}
+```
+
+Before deployment, you need to provide initial value in constructor. `Require()` use to create constraint of initial value such as balance >= 1000.
+
 ## Remix IDE
 
 Remix IDE is an open source tool that helps writing Solidity contracts straight from the browser. It has modules for testing, debugging and deploying of smart contracts.
