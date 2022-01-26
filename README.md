@@ -116,6 +116,39 @@ Select environment, account, gas limit, contract and then click Deploy.
 - When the button color is orange like deployment & transaction, it means that you need to pay gas price.
 - When you would like to access public variable in contract, you do not need to pay gas price (click blue button).
 
+## MetaMask
+
+MetaMask is a crypto wallet and gateway to blockchain apps. After finishing writing smart contract and you would like to deploy to ethereum network, Metamask can help you do that. MetaMask can run on web browser and mobile app.
+
+- Go to [official website](https://metamask.io/)
+- Install with chrome extension
+- Create a Wallet
+
+### Networks
+
+- Ethereum Mainnet - real network to make real transaction
+- Test network - use for testing smart contract (you need to set show/hide test networks to show)
+
+### Accounts
+
+You can have more than one account
+
+### Testnet Faucet
+
+Find free money to use in test network
+
+- [Chainlink](https://faucets.chain.link/)
+
+## Deploy smart contract
+
+- In Remix IDE, choose injected Web3 environment
+- If the message pop up that cannot find injected Web3, reload page once
+- choose an account
+- compile and deploy
+- open [Etherscan](https://etherscan.io/) and choose your testnet to watch your smart contract
+- copy your smart contract address from Remix IDE
+- verify and publish - copy solidity contract source code and paste to verify
+
 ## Reference
 
 - [learning-smart-contract](https://github.com/kongruksiamza/learning-smart-contract)
