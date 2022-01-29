@@ -1,5 +1,7 @@
 # Smart Contract with Solidity
 
+Smart Contract is a program that runs on the Ethereum blockchain. You can deploy smart contract to your cryptocurrency wallet like MetaMask.
+
 ## Tools
 
 - Remix IDE
